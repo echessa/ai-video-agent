@@ -135,7 +135,7 @@ client = anthropic.Anthropic()
 
 def run_agent(user_message: str) -> str:
     response = client.messages.create(
-        model="claude-sonnet-4-5",
+        model="claude-sonnet-4-6",
         max_tokens=1024,
         system=system_prompt,
         tools=[video_tool],
@@ -157,7 +157,7 @@ def run_agent(user_message: str) -> str:
             )
 
             final_response = client.messages.create(
-                model="claude-sonnet-4-5",
+                model="claude-sonnet-4-6",
                 max_tokens=1024,
                 system=system_prompt,
                 tools=[video_tool],
@@ -201,7 +201,7 @@ if __name__ == "__main__":
         conversation_history.append({"role": "user", "content": user_input})
 
         response = client.messages.create(
-            model="claude-sonnet-4-5",
+            model="claude-sonnet-4-6",
             max_tokens=1024,
             system=system_prompt,
             tools=[video_tool],
@@ -233,7 +233,7 @@ if __name__ == "__main__":
                 })
 
                 final_response = client.messages.create(
-                    model="claude-sonnet-4-5",
+                    model="claude-sonnet-4-6",
                     max_tokens=1024,
                     system=system_prompt,
                     tools=[video_tool],
