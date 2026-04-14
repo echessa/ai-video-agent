@@ -1,6 +1,6 @@
 # How to Build an AI Video Agent with Python and the Shotstack API
 
-Create Promo Template with the following JSON:
+### Create Promo Template with the following JSON:
 
 ```json
 {
@@ -191,7 +191,7 @@ Create Promo Template with the following JSON:
 }
 ```
 
-Create Genral Template with the following JSON:
+### Create General Template with the following JSON:
 
 ```sh
 {
@@ -264,7 +264,7 @@ Create Genral Template with the following JSON:
 }
 ```
 
-Place your template IDs in the Python file:
+### Place your template IDs in the Python file:
 
 ```json
 TEMPLATE_IDS = {
@@ -273,20 +273,20 @@ TEMPLATE_IDS = {
 }
 ```
 
-Install the required packages:
+### Install the required packages:
 
 ```sh
 pip install anthropic requests
 ```
 
-Export your API keys as environment variables:
+### Export your API keys as environment variables:
 
 ```sh
 export ANTHROPIC_API_KEY="your-anthropic-api-key"
 export SHOTSTACK_API_KEY="your-shotstack-api-key"
 ```
 
-Run:
+### Run:
 
 ```sh
 python ai_agent.py
